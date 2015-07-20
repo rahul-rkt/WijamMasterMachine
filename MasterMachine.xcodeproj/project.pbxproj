@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		900C10C317C4A4F400BE46AF /* PGMidi.mm in Sources */ = {isa = PBXBuildFile; fileRef = 900C10BE17C4A4F400BE46AF /* PGMidi.mm */; };
+		900C10C417C4A4F400BE46AF /* PGMidiAllSources.mm in Sources */ = {isa = PBXBuildFile; fileRef = 900C10C017C4A4F400BE46AF /* PGMidiAllSources.mm */; };
+		900C10C517C4A4F400BE46AF /* PGMidiFind.mm in Sources */ = {isa = PBXBuildFile; fileRef = 900C10C217C4A4F400BE46AF /* PGMidiFind.mm */; };
+		900C10C717C4A51F00BE46AF /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 900C10C617C4A51F00BE46AF /* CoreMIDI.framework */; };
+		900C10C917C4A52400BE46AF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 900C10C817C4A52400BE46AF /* AVFoundation.framework */; };
+		900C10CB17C4A53800BE46AF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 900C10CA17C4A53800BE46AF /* AudioToolbox.framework */; };
+		902DF2CA17CC857400A88965 /* Ensemble.aupreset in Resources */ = {isa = PBXBuildFile; fileRef = 902DF2C317CC857400A88965 /* Ensemble.aupreset */; };
+		902DF2CB17CC857400A88965 /* Guitar.aupreset in Resources */ = {isa = PBXBuildFile; fileRef = 902DF2C417CC857400A88965 /* Guitar.aupreset */; };
+		902DF2CD17CC857400A88965 /* Piano.aupreset in Resources */ = {isa = PBXBuildFile; fileRef = 902DF2C617CC857400A88965 /* Piano.aupreset */; };
+		902DF2CE17CC857400A88965 /* SteelGuitar.aupreset in Resources */ = {isa = PBXBuildFile; fileRef = 902DF2C717CC857400A88965 /* SteelGuitar.aupreset */; };
+		902DF2CF17CC857400A88965 /* Trombone.aupreset in Resources */ = {isa = PBXBuildFile; fileRef = 902DF2C817CC857400A88965 /* Trombone.aupreset */; };
+		902DF2D017CC857400A88965 /* Vibraphone.aupreset in Resources */ = {isa = PBXBuildFile; fileRef = 902DF2C917CC857400A88965 /* Vibraphone.aupreset */; };
+		902DF2D217CC86C300A88965 /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 902DF2D117CC86C300A88965 /* Sounds */; };
+		9034291417C47C370008032B /* Go.png in Resources */ = {isa = PBXBuildFile; fileRef = 9034291317C47C370008032B /* Go.png */; };
+		90368C0917C3148600654EA3 /* Triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = 90368C0817C3148600654EA3 /* Triangle.png */; };
+		903ACC4E17C33020002FA59B /* Slider.png in Resources */ = {isa = PBXBuildFile; fileRef = 903ACC4D17C33020002FA59B /* Slider.png */; };
+		903ACC5117C3676E002FA59B /* PickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 903ACC5017C3676E002FA59B /* PickViewController.m */; };
+		90458D8417CDA0A500355405 /* ScaleButtonRed.png in Resources */ = {isa = PBXBuildFile; fileRef = 90458D8317CDA0A500355405 /* ScaleButtonRed.png */; };
+		90495AB817CB738000356839 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 90495AB717CB738000356839 /* User.m */; };
+		9080F44917CB0BEF00B72DD7 /* AssignmentTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 9080F43C17CB0BEF00B72DD7 /* AssignmentTable.m */; };
+		9080F44A17CB0BEF00B72DD7 /* Communicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9080F43E17CB0BEF00B72DD7 /* Communicator.m */; };
+		9080F44B17CB0BEF00B72DD7 /* DirectoryWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 9080F44017CB0BEF00B72DD7 /* DirectoryWatcher.m */; };
+		9080F44C17CB0BEF00B72DD7 /* grooveTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9080F44217CB0BEF00B72DD7 /* grooveTableViewController.m */; };
+		9080F44D17CB0BEF00B72DD7 /* MIDINote.m in Sources */ = {isa = PBXBuildFile; fileRef = 9080F44417CB0BEF00B72DD7 /* MIDINote.m */; };
+		9080F44E17CB0BEF00B72DD7 /* NoteNumDict.m in Sources */ = {isa = PBXBuildFile; fileRef = 9080F44617CB0BEF00B72DD7 /* NoteNumDict.m */; };
+		9080F44F17CB0BEF00B72DD7 /* VirtualInstrument.m in Sources */ = {isa = PBXBuildFile; fileRef = 9080F44817CB0BEF00B72DD7 /* VirtualInstrument.m */; };
+		9080F52C17C21D1700A37E26 /* ScaleButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 9080F52B17C21D1700A37E26 /* ScaleButton.png */; };
+		9080F52E17C21D8000A37E26 /* Circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 9080F52D17C21D8000A37E26 /* Circle.png */; };
+		90ADB12817C20A2E00463306 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90ADB12717C20A2E00463306 /* UIKit.framework */; };
+		90ADB12A17C20A2E00463306 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90ADB12917C20A2E00463306 /* Foundation.framework */; };
+		90ADB12C17C20A2E00463306 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90ADB12B17C20A2E00463306 /* CoreGraphics.framework */; };
+		90ADB13217C20A2F00463306 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 90ADB13017C20A2F00463306 /* InfoPlist.strings */; };
+		90ADB13417C20A2F00463306 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90ADB13317C20A2F00463306 /* main.m */; };
+		90ADB13817C20A2F00463306 /* MasterMachineAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90ADB13717C20A2F00463306 /* MasterMachineAppDelegate.m */; };
+		90ADB13A17C20A2F00463306 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 90ADB13917C20A2F00463306 /* Default.png */; };
+		90ADB13C17C20A2F00463306 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90ADB13B17C20A2F00463306 /* Default@2x.png */; };
+		90ADB13E17C20A2F00463306 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90ADB13D17C20A2F00463306 /* Default-568h@2x.png */; };
+		90ADB14117C20A2F00463306 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90ADB13F17C20A2F00463306 /* MainStoryboard.storyboard */; };
+		90ADB14417C20A2F00463306 /* MasterMachineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90ADB14317C20A2F00463306 /* MasterMachineViewController.m */; };
+		90D5A13A1820AADB006C018E /* WIJAM-MASTER@144.png in Resources */ = {isa = PBXBuildFile; fileRef = 90D5A1381820AADB006C018E /* WIJAM-MASTER@144.png */; };
+		90D5A13B1820AADB006C018E /* WIJAM-MASTER@152.png in Resources */ = {isa = PBXBuildFile; fileRef = 90D5A1391820AADB006C018E /* WIJAM-MASTER@152.png */; };
+		90F08AAE17C317E200A53704 /* Circle2.png in Resources */ = {isa = PBXBuildFile; fileRef = 90F08AAD17C317E200A53704 /* Circle2.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		900C10BB17C4A4F400BE46AF /* iOSVersionDetection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSVersionDetection.h; sourceTree = "<group>"; };
+		900C10BC17C4A4F400BE46AF /* PGArc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGArc.h; sourceTree = "<group>"; };
+		900C10BD17C4A4F400BE46AF /* PGMidi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMidi.h; sourceTree = "<group>"; };
+		900C10BE17C4A4F400BE46AF /* PGMidi.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PGMidi.mm; sourceTree = "<group>"; };
+		900C10BF17C4A4F400BE46AF /* PGMidiAllSources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMidiAllSources.h; sourceTree = "<group>"; };
+		900C10C017C4A4F400BE46AF /* PGMidiAllSources.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PGMidiAllSources.mm; sourceTree = "<group>"; };
+		900C10C117C4A4F400BE46AF /* PGMidiFind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMidiFind.h; sourceTree = "<group>"; };
+		900C10C217C4A4F400BE46AF /* PGMidiFind.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PGMidiFind.mm; sourceTree = "<group>"; };
+		900C10C617C4A51F00BE46AF /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
+		900C10C817C4A52400BE46AF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		900C10CA17C4A53800BE46AF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		902DF2C317CC857400A88965 /* Ensemble.aupreset */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Ensemble.aupreset; sourceTree = "<group>"; };
+		902DF2C417CC857400A88965 /* Guitar.aupreset */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Guitar.aupreset; sourceTree = "<group>"; };
+		902DF2C617CC857400A88965 /* Piano.aupreset */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Piano.aupreset; sourceTree = "<group>"; };
+		902DF2C717CC857400A88965 /* SteelGuitar.aupreset */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SteelGuitar.aupreset; sourceTree = "<group>"; };
+		902DF2C817CC857400A88965 /* Trombone.aupreset */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Trombone.aupreset; sourceTree = "<group>"; };
+		902DF2C917CC857400A88965 /* Vibraphone.aupreset */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Vibraphone.aupreset; sourceTree = "<group>"; };
+		902DF2D117CC86C300A88965 /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
+		9034291317C47C370008032B /* Go.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Go.png; sourceTree = "<group>"; };
+		90368C0817C3148600654EA3 /* Triangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Triangle.png; sourceTree = "<group>"; };
+		903ACC4C17C32B60002FA59B /* Definition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Definition.h; sourceTree = "<group>"; };
+		903ACC4D17C33020002FA59B /* Slider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Slider.png; sourceTree = "<group>"; };
+		903ACC4F17C3676E002FA59B /* PickViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickViewController.h; sourceTree = "<group>"; };
+		903ACC5017C3676E002FA59B /* PickViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickViewController.m; sourceTree = "<group>"; };
+		90458D8317CDA0A500355405 /* ScaleButtonRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ScaleButtonRed.png; sourceTree = "<group>"; };
+		90495AB617CB738000356839 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		90495AB717CB738000356839 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		9080F43B17CB0BEF00B72DD7 /* AssignmentTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssignmentTable.h; sourceTree = "<group>"; };
+		9080F43C17CB0BEF00B72DD7 /* AssignmentTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssignmentTable.m; sourceTree = "<group>"; };
+		9080F43D17CB0BEF00B72DD7 /* Communicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Communicator.h; sourceTree = "<group>"; };
+		9080F43E17CB0BEF00B72DD7 /* Communicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Communicator.m; sourceTree = "<group>"; };
+		9080F43F17CB0BEF00B72DD7 /* DirectoryWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectoryWatcher.h; sourceTree = "<group>"; };
+		9080F44017CB0BEF00B72DD7 /* DirectoryWatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectoryWatcher.m; sourceTree = "<group>"; };
+		9080F44117CB0BEF00B72DD7 /* grooveTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = grooveTableViewController.h; sourceTree = "<group>"; };
+		9080F44217CB0BEF00B72DD7 /* grooveTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = grooveTableViewController.m; sourceTree = "<group>"; };
+		9080F44317CB0BEF00B72DD7 /* MIDINote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDINote.h; sourceTree = "<group>"; };
+		9080F44417CB0BEF00B72DD7 /* MIDINote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIDINote.m; sourceTree = "<group>"; };
+		9080F44517CB0BEF00B72DD7 /* NoteNumDict.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteNumDict.h; sourceTree = "<group>"; };
+		9080F44617CB0BEF00B72DD7 /* NoteNumDict.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteNumDict.m; sourceTree = "<group>"; };
+		9080F44717CB0BEF00B72DD7 /* VirtualInstrument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VirtualInstrument.h; sourceTree = "<group>"; };
+		9080F44817CB0BEF00B72DD7 /* VirtualInstrument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VirtualInstrument.m; sourceTree = "<group>"; };
+		9080F52B17C21D1700A37E26 /* ScaleButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ScaleButton.png; sourceTree = "<group>"; };
+		9080F52D17C21D8000A37E26 /* Circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Circle.png; sourceTree = "<group>"; };
+		90ADB12417C20A2E00463306 /* WIJAM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WIJAM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		90ADB12717C20A2E00463306 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		90ADB12917C20A2E00463306 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		90ADB12B17C20A2E00463306 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		90ADB12F17C20A2F00463306 /* MasterMachine-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MasterMachine-Info.plist"; sourceTree = "<group>"; };
+		90ADB13117C20A2F00463306 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		90ADB13317C20A2F00463306 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		90ADB13517C20A2F00463306 /* MasterMachine-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MasterMachine-Prefix.pch"; sourceTree = "<group>"; };
+		90ADB13617C20A2F00463306 /* MasterMachineAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterMachineAppDelegate.h; sourceTree = "<group>"; };
+		90ADB13717C20A2F00463306 /* MasterMachineAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterMachineAppDelegate.m; sourceTree = "<group>"; };
+		90ADB13917C20A2F00463306 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		90ADB13B17C20A2F00463306 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		90ADB13D17C20A2F00463306 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		90ADB14017C20A2F00463306 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		90ADB14217C20A2F00463306 /* MasterMachineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterMachineViewController.h; sourceTree = "<group>"; };
+		90ADB14317C20A2F00463306 /* MasterMachineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterMachineViewController.m; sourceTree = "<group>"; };
+		90D5A1381820AADB006C018E /* WIJAM-MASTER@144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WIJAM-MASTER@144.png"; sourceTree = "<group>"; };
+		90D5A1391820AADB006C018E /* WIJAM-MASTER@152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WIJAM-MASTER@152.png"; sourceTree = "<group>"; };
+		90F08AAD17C317E200A53704 /* Circle2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Circle2.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		90ADB12117C20A2E00463306 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				900C10CB17C4A53800BE46AF /* AudioToolbox.framework in Frameworks */,
+				900C10C917C4A52400BE46AF /* AVFoundation.framework in Frameworks */,
+				900C10C717C4A51F00BE46AF /* CoreMIDI.framework in Frameworks */,
+				90ADB12817C20A2E00463306 /* UIKit.framework in Frameworks */,
+				90ADB12A17C20A2E00463306 /* Foundation.framework in Frameworks */,
+				90ADB12C17C20A2E00463306 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		900C10BA17C4A4F400BE46AF /* PGMidi */ = {
+			isa = PBXGroup;
+			children = (
+				900C10BB17C4A4F400BE46AF /* iOSVersionDetection.h */,
+				900C10BC17C4A4F400BE46AF /* PGArc.h */,
+				900C10BD17C4A4F400BE46AF /* PGMidi.h */,
+				900C10BE17C4A4F400BE46AF /* PGMidi.mm */,
+				900C10BF17C4A4F400BE46AF /* PGMidiAllSources.h */,
+				900C10C017C4A4F400BE46AF /* PGMidiAllSources.mm */,
+				900C10C117C4A4F400BE46AF /* PGMidiFind.h */,
+				900C10C217C4A4F400BE46AF /* PGMidiFind.mm */,
+			);
+			name = PGMidi;
+			path = MasterMachine/PGMidi;
+			sourceTree = "<group>";
+		};
+		90ADB11B17C20A2E00463306 = {
+			isa = PBXGroup;
+			children = (
+				902DF2C317CC857400A88965 /* Ensemble.aupreset */,
+				902DF2C417CC857400A88965 /* Guitar.aupreset */,
+				902DF2C617CC857400A88965 /* Piano.aupreset */,
+				902DF2C717CC857400A88965 /* SteelGuitar.aupreset */,
+				902DF2C817CC857400A88965 /* Trombone.aupreset */,
+				902DF2C917CC857400A88965 /* Vibraphone.aupreset */,
+				902DF2D117CC86C300A88965 /* Sounds */,
+				900C10BA17C4A4F400BE46AF /* PGMidi */,
+				90ADB12D17C20A2E00463306 /* MasterMachine */,
+				90ADB12617C20A2E00463306 /* Frameworks */,
+				90ADB12517C20A2E00463306 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		90ADB12517C20A2E00463306 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				90ADB12417C20A2E00463306 /* WIJAM.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		90ADB12617C20A2E00463306 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				900C10CA17C4A53800BE46AF /* AudioToolbox.framework */,
+				900C10C817C4A52400BE46AF /* AVFoundation.framework */,
+				900C10C617C4A51F00BE46AF /* CoreMIDI.framework */,
+				90ADB12717C20A2E00463306 /* UIKit.framework */,
+				90ADB12917C20A2E00463306 /* Foundation.framework */,
+				90ADB12B17C20A2E00463306 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		90ADB12D17C20A2E00463306 /* MasterMachine */ = {
+			isa = PBXGroup;
+			children = (
+				90ADB13F17C20A2F00463306 /* MainStoryboard.storyboard */,
+				903ACC4C17C32B60002FA59B /* Definition.h */,
+				90ADB13617C20A2F00463306 /* MasterMachineAppDelegate.h */,
+				90ADB13717C20A2F00463306 /* MasterMachineAppDelegate.m */,
+				90ADB14217C20A2F00463306 /* MasterMachineViewController.h */,
+				90ADB14317C20A2F00463306 /* MasterMachineViewController.m */,
+				903ACC4F17C3676E002FA59B /* PickViewController.h */,
+				903ACC5017C3676E002FA59B /* PickViewController.m */,
+				9080F43B17CB0BEF00B72DD7 /* AssignmentTable.h */,
+				9080F43C17CB0BEF00B72DD7 /* AssignmentTable.m */,
+				9080F43D17CB0BEF00B72DD7 /* Communicator.h */,
+				9080F43E17CB0BEF00B72DD7 /* Communicator.m */,
+				9080F43F17CB0BEF00B72DD7 /* DirectoryWatcher.h */,
+				9080F44017CB0BEF00B72DD7 /* DirectoryWatcher.m */,
+				9080F44117CB0BEF00B72DD7 /* grooveTableViewController.h */,
+				9080F44217CB0BEF00B72DD7 /* grooveTableViewController.m */,
+				90495AB617CB738000356839 /* User.h */,
+				90495AB717CB738000356839 /* User.m */,
+				9080F44317CB0BEF00B72DD7 /* MIDINote.h */,
+				9080F44417CB0BEF00B72DD7 /* MIDINote.m */,
+				9080F44517CB0BEF00B72DD7 /* NoteNumDict.h */,
+				9080F44617CB0BEF00B72DD7 /* NoteNumDict.m */,
+				9080F44717CB0BEF00B72DD7 /* VirtualInstrument.h */,
+				9080F44817CB0BEF00B72DD7 /* VirtualInstrument.m */,
+				90ADB12E17C20A2F00463306 /* Supporting Files */,
+			);
+			path = MasterMachine;
+			sourceTree = "<group>";
+		};
+		90ADB12E17C20A2F00463306 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				90D5A1381820AADB006C018E /* WIJAM-MASTER@144.png */,
+				90D5A1391820AADB006C018E /* WIJAM-MASTER@152.png */,
+				90458D8317CDA0A500355405 /* ScaleButtonRed.png */,
+				9034291317C47C370008032B /* Go.png */,
+				903ACC4D17C33020002FA59B /* Slider.png */,
+				90F08AAD17C317E200A53704 /* Circle2.png */,
+				90368C0817C3148600654EA3 /* Triangle.png */,
+				9080F52D17C21D8000A37E26 /* Circle.png */,
+				9080F52B17C21D1700A37E26 /* ScaleButton.png */,
+				90ADB12F17C20A2F00463306 /* MasterMachine-Info.plist */,
+				90ADB13017C20A2F00463306 /* InfoPlist.strings */,
+				90ADB13317C20A2F00463306 /* main.m */,
+				90ADB13517C20A2F00463306 /* MasterMachine-Prefix.pch */,
+				90ADB13917C20A2F00463306 /* Default.png */,
+				90ADB13B17C20A2F00463306 /* Default@2x.png */,
+				90ADB13D17C20A2F00463306 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		90ADB12317C20A2E00463306 /* MasterMachine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90ADB14717C20A2F00463306 /* Build configuration list for PBXNativeTarget "MasterMachine" */;
+			buildPhases = (
+				90ADB12017C20A2E00463306 /* Sources */,
+				90ADB12117C20A2E00463306 /* Frameworks */,
+				90ADB12217C20A2E00463306 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MasterMachine;
+			productName = MasterMachine;
+			productReference = 90ADB12417C20A2E00463306 /* WIJAM.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		90ADB11C17C20A2E00463306 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MasterMachine;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = rkthakur;
+				TargetAttributes = {
+					90ADB12317C20A2E00463306 = {
+						DevelopmentTeam = 864XSL2U7M;
+					};
+				};
+			};
+			buildConfigurationList = 90ADB11F17C20A2E00463306 /* Build configuration list for PBXProject "MasterMachine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 90ADB11B17C20A2E00463306;
+			productRefGroup = 90ADB12517C20A2E00463306 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				90ADB12317C20A2E00463306 /* MasterMachine */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		90ADB12217C20A2E00463306 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90ADB13217C20A2F00463306 /* InfoPlist.strings in Resources */,
+				90ADB13A17C20A2F00463306 /* Default.png in Resources */,
+				90ADB13C17C20A2F00463306 /* Default@2x.png in Resources */,
+				90ADB13E17C20A2F00463306 /* Default-568h@2x.png in Resources */,
+				90ADB14117C20A2F00463306 /* MainStoryboard.storyboard in Resources */,
+				9080F52C17C21D1700A37E26 /* ScaleButton.png in Resources */,
+				9080F52E17C21D8000A37E26 /* Circle.png in Resources */,
+				90368C0917C3148600654EA3 /* Triangle.png in Resources */,
+				90F08AAE17C317E200A53704 /* Circle2.png in Resources */,
+				903ACC4E17C33020002FA59B /* Slider.png in Resources */,
+				9034291417C47C370008032B /* Go.png in Resources */,
+				902DF2CA17CC857400A88965 /* Ensemble.aupreset in Resources */,
+				902DF2CB17CC857400A88965 /* Guitar.aupreset in Resources */,
+				902DF2CD17CC857400A88965 /* Piano.aupreset in Resources */,
+				902DF2CE17CC857400A88965 /* SteelGuitar.aupreset in Resources */,
+				902DF2CF17CC857400A88965 /* Trombone.aupreset in Resources */,
+				902DF2D017CC857400A88965 /* Vibraphone.aupreset in Resources */,
+				90D5A13A1820AADB006C018E /* WIJAM-MASTER@144.png in Resources */,
+				902DF2D217CC86C300A88965 /* Sounds in Resources */,
+				90D5A13B1820AADB006C018E /* WIJAM-MASTER@152.png in Resources */,
+				90458D8417CDA0A500355405 /* ScaleButtonRed.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		90ADB12017C20A2E00463306 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90ADB13417C20A2F00463306 /* main.m in Sources */,
+				90ADB13817C20A2F00463306 /* MasterMachineAppDelegate.m in Sources */,
+				90ADB14417C20A2F00463306 /* MasterMachineViewController.m in Sources */,
+				903ACC5117C3676E002FA59B /* PickViewController.m in Sources */,
+				900C10C317C4A4F400BE46AF /* PGMidi.mm in Sources */,
+				900C10C417C4A4F400BE46AF /* PGMidiAllSources.mm in Sources */,
+				900C10C517C4A4F400BE46AF /* PGMidiFind.mm in Sources */,
+				9080F44917CB0BEF00B72DD7 /* AssignmentTable.m in Sources */,
+				9080F44A17CB0BEF00B72DD7 /* Communicator.m in Sources */,
+				9080F44B17CB0BEF00B72DD7 /* DirectoryWatcher.m in Sources */,
+				9080F44C17CB0BEF00B72DD7 /* grooveTableViewController.m in Sources */,
+				9080F44D17CB0BEF00B72DD7 /* MIDINote.m in Sources */,
+				9080F44E17CB0BEF00B72DD7 /* NoteNumDict.m in Sources */,
+				9080F44F17CB0BEF00B72DD7 /* VirtualInstrument.m in Sources */,
+				90495AB817CB738000356839 /* User.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		90ADB13017C20A2F00463306 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90ADB13117C20A2F00463306 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		90ADB13F17C20A2F00463306 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90ADB14017C20A2F00463306 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		90ADB14517C20A2F00463306 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		90ADB14617C20A2F00463306 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		90ADB14817C20A2F00463306 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MasterMachine/MasterMachine-Prefix.pch";
+				INFOPLIST_FILE = "MasterMachine/MasterMachine-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = WIJAM;
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		90ADB14917C20A2F00463306 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MasterMachine/MasterMachine-Prefix.pch";
+				INFOPLIST_FILE = "MasterMachine/MasterMachine-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = WIJAM;
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		90ADB11F17C20A2E00463306 /* Build configuration list for PBXProject "MasterMachine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90ADB14517C20A2F00463306 /* Debug */,
+				90ADB14617C20A2F00463306 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90ADB14717C20A2F00463306 /* Build configuration list for PBXNativeTarget "MasterMachine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90ADB14817C20A2F00463306 /* Debug */,
+				90ADB14917C20A2F00463306 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 90ADB11C17C20A2E00463306 /* Project object */;
+}
